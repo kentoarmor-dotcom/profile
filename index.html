@@ -1,56 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- ① css/style.css を読み込む -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>kennnosuke1107</h1>
-<p>栃木生まれの愛知育ち1年。スポーツが大好き</p>
-    <img src="img/silhouette_human05_man.png" width="200">
+    <!-- ④ 自分で付けた class "profile-name" を適用 -->
+    <h1 class="profile-name">kennnosuke1107</h1>
+    <p>栃木生まれの愛知育ち1年。スポーツが大好き</p>
+    <img src="img/silhouette_human05_man.png" width="200" alt="プロフィール画像">
 
-<h2>好きなもの</h2>
-<ul>
-    <li>ゲーム</li>
-    <li>スポーツ</li>
-    <li>映画</li>
+    <h2>好きなもの</h2>
+    <ul>
+        <li>ゲーム</li>
+        <li>スポーツ</li>
+        <li>映画</li>
+    </ul>
     <p>スポーツは体を大きく動かすものが好きです。</p>
     <a href="https://www.youtube.com/">よく使うWeb</a><br>
-</ul>
-<h2>好きなスポーツランキング</h2>
-<ol>
-    <li>陸上</li>
-    <li>水泳</li>
-    <li>体操</li>
-</ol>
-    <table border="1">
-   <tr>
-        <th>月曜日</th>
-        <td>水曜日</td>
-        <td>日曜日</td>
-    </tr>
-    <tr>
-        <th>バイト</th>
-        <td>バイト</td>
-        <td>バイト</td>
-    </tr>
-</table>
-<h2>このページの感想を送る</h2>
-<form method="get">
-    <dl>
-        <dt><label for="visitor-name">お名前</label></dt>
-        <dd><input type="text" id="visitor-name" name="visitor-name"></dd>
-        <dt>いちばんよかったところ</dt>
-        <dd>
-            <label><input type="radio" name="best" value="photo">写真</label>
-            <label><input type="radio" name="best" value="list">好きなもの</label>
-            <label><input type="radio" name="best" value="table">予定の表</label>
-        </dd>
-        <dt><label for="comment">感想</label></dt>
-        <dd><textarea id="comment" name="comment" rows="4"></textarea></dd>
-    </dl>
-    <button type="submit">送信する</button>
-</form>
+
+    <h2>好きなスポーツランキング</h2>
+    <ol>
+        <li>陸上</li>
+        <li>水泳</li>
+        <li>体操</li>
+    </ol>
+
+    <!-- ③ border="1" を削除 -->
+    <table>
+        <tr>
+            <th>月曜日</th>
+            <td>水曜日</td>
+            <td>日曜日</td>
+        </tr>
+        <tr>
+            <th>バイト</th>
+            <td>バイト</td>
+            <td>バイト</td>
+        </tr>
+    </table>
+
+    <h2>このページの感想を送る</h2>
+    <form method="get">
+        <dl>
+            <dt><label for="visitor-name">お名前</label></dt>
+            <dd><input type="text" id="visitor-name" name="visitor-name"></dd>
+            <dt>いちばんよかったところ</dt>
+            <dd>
+                <label><input type="radio" name="best" value="photo">写真</label>
+                <label><input type="radio" name="best" value="list">好きなもの</label>
+                <label><input type="radio" name="best" value="table">予定の表</label>
+            </dd>
+            <dt><label for="comment">感想</label></dt>
+            <dd><textarea id="comment" name="comment" rows="4"></textarea></dd>
+        </dl>
+        <button type="submit">送信する</button>
+    </form>
 </body>
 </html>

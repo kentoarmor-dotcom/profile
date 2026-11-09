@@ -1,0 +1,34 @@
+/* ② body・h1・h2 のルール */
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: #333333;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  /* ② h2 に下線を付ける */
+  border-bottom: 2px solid #333333;
+  padding-bottom: 4px;
+  margin-top: 24px;
+}
+
+/* ③ 表の罫線を CSS で指定 */
+table, th, td {
+  border: 1px solid #333333;
+  border-collapse: collapse; /* 枠線のすき間をなくして一本線にする */
+}
+
+th, td {
+  padding: 8px 12px;
+}
+
+/* ④ 自分で付けた class のスタイル */
+.profile-name {
+  border: 2px solid #333333; /* 四角で囲む */
+  padding: 8px;
+  display: inline-block;     /* 文字の長さに合わせて四角枠をフィットさせる */
+}
