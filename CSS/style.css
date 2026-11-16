@@ -1,34 +1,84 @@
-/* ② body・h1・h2 のルール */
+/* ページ全体の基本設定：左右の空白を白色にするため body の背景を白に */
 body {
   font-family: sans-serif;
+  margin: 0;
+  padding: 0;
   line-height: 1.6;
   color: #333333;
+  background-color: #ffffff; /* 左右の空白を白にする */
 }
 
-h1 {
+/* ヘッダーのデザイン（中央に寄せ、見本と同じ薄い背景色をつける） */
+header {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #faeee3;
+  padding: 20px;
+}
+
+header h1 {
   font-size: 24px;
+  color: #b94000;
+  margin-top: 0;
 }
 
+/* メニューのリンクをボタン風にする */
+header nav {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+header nav a {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 4px 10px;
+  text-decoration: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+header nav a:hover {
+  background-color: #f0f0f0;
+}
+
+/* 本文（main）のスタイル（中央に寄せて背景を白にする） */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  min-height: 60vh;
+}
+
+/* 見出しのスタイル */
 h2 {
-  /* ② h2 に下線を付ける */
-  border-bottom: 2px solid #333333;
+  font-size: 20px;
+  border-bottom: 2px solid #b94000;
   padding-bottom: 4px;
-  margin-top: 24px;
+  margin-top: 30px;
 }
 
-/* ③ 表の罫線を CSS で指定 */
+/* 表のスタイル */
 table, th, td {
   border: 1px solid #333333;
-  border-collapse: collapse; /* 枠線のすき間をなくして一本線にする */
+  border-collapse: collapse;
 }
 
 th, td {
   padding: 8px 12px;
 }
 
-/* ④ 自分で付けた class のスタイル */
-.profile-name {
-  border: 2px solid #333333; /* 四角で囲む */
-  padding: 8px;
-  display: inline-block;     /* 文字の長さに合わせて四角枠をフィットさせる */
+th {
+  background-color: #f8f9fa;
+}
+
+/* フッターのデザイン（中央に寄せる） */
+footer {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #faeee3;
+  padding: 15px 20px;
+  font-size: 14px;
 }
