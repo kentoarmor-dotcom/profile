@@ -14,6 +14,9 @@ header {
   margin: 0 auto;
   background-color: #faeee3;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header h1 {
@@ -81,4 +84,16 @@ footer {
   background-color: #faeee3;
   padding: 15px 20px;
   font-size: 14px;
+}
+nav {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
 }
