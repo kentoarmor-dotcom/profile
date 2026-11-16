@@ -1,0 +1,105 @@
+
+/* ページ全体 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #e9edf2;
+}
+
+/* チャット画面全体 */
+.chat-container {
+    width: 90%;
+    max-width: 600px;
+    height: 90vh;
+    margin: 20px auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* ヘッダー */
+.chat-header {
+    padding: 15px;
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+}
+
+/* ヘッダーの文字 */
+.chat-header h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+/* 会話エリア */
+.chat-area {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* 相手のメッセージ */
+.message-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* 自分のメッセージ */
+.message-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* 吹き出し共通 */
+.bubble {
+    padding: 12px 16px;
+    border-radius: 18px;
+    max-width: 70%;
+    overflow-wrap: break-word;
+    line-height: 1.6;
+}
+
+/* 相手の吹き出し */
+.message-left .bubble {
+    background-color: #eeeeee;
+    color: #333333;
+}
+
+/* 自分の吹き出し */
+.message-right .bubble {
+    background-color: #4a90e2;
+    color: white;
+}
+
+/* 入力エリア */
+.chat-input {
+    display: flex;
+    padding: 15px;
+    gap: 10px;
+    border-top: 1px solid #dddddd;
+}
+
+/* 入力欄 */
+.chat-input input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* 送信ボタン */
+.chat-input button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4a90e2;
+    color: white;
+    cursor: pointer;
+}
